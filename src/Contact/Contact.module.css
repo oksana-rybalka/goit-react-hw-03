@@ -1,31 +1,40 @@
 .contactItem {
   width: 500px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   border: 2px solid rgb(12, 105, 83);
   border-radius: 20px;
+  padding: 20px;
+}
+.icon {
+  color: rgb(12, 105, 83);
+  align-items: start;
+  margin: 0 auto;
+  padding-right: 15px;
+  font-size: 24px;
 }
 
 .contactContainer {
-  width: 150px;
+  width: 200px;
   display: flex;
   flex-direction: column;
-  padding: 15px;
 }
 .contactName {
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
+  font-size: 18px;
   font-weight: 400;
 }
 .contactNumber {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 400;
   font-weight: 500;
+  text-align: left;
 }
 .buttonDelete {
   width: 120px;
   height: 60px;
-  padding: 15px;
+  padding: 10px;
   border: 2px solid rgb(12, 105, 83);
   border-radius: 15px;
   background-color: rgb(41, 187, 170);

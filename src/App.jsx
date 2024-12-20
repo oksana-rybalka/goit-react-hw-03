@@ -12,6 +12,16 @@ function App() {
     { id: "id-4", name: "Сергій Стерненко", number: "227-91-26" },
   ]);
 
+  const [filter, setFilter] = useState("");
+
+  const handleFilterChange = (event) => {
+    setFilter(event.target.value.toLowerCase());
+  };
+
+  const filteredContacts = contacts.filter((contact) =>
+    contact.name.toLowerCase().includes(filter)
+  );
+
   const deleteContact = (id) => {
     setContacts((prevContacts) =>
       prevContacts.filter((contact) => contact.id !== id)
@@ -21,6 +31,7 @@ function App() {
   return (
     <div className={style.parentContainer}>
       <h1 className={style.titlePhonebook}>Телефонний записник</h1>
+      <SearchBox filter={filter} onChange={handleFilterChange} />
       <ContactList contacts={contacts} />
     </div>
   );
