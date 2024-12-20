@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: rgb(171, 247, 222);
+  box-shadow: 0 0 10px 2px rgba(8, 119, 113, 0.7);
+  border-radius: 30px;
+  justify-content: center;
 }
 
 .logo {
@@ -39,9 +45,4 @@
 
 .read-the-docs {
   color: #888;
-}
-.titlePhonebook {
-  font-size: 600;
-  font-weight: 300;
-  color: crimson;
 }

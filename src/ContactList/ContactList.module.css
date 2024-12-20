@@ -1,0 +1,4 @@
+.phoneList {
+  display: flex;
+  flex-direction: row;
+}
