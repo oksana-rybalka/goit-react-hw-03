@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./App.css";
 import ContactList from "./ContactList/ContactList";
-import Contact from "./Contact/Contact";
+// import Contact from "./Contact/Contact";
 import style from "./App.module.css";
+import SearchBox from "./SearchBox/SearchBox";
 
 function App() {
   const [contacts, setContacts] = useState([
@@ -32,7 +33,7 @@ function App() {
     <div className={style.parentContainer}>
       <h1 className={style.titlePhonebook}>Телефонний записник</h1>
       <SearchBox filter={filter} onChange={handleFilterChange} />
-      <ContactList contacts={contacts} />
+      <ContactList contacts={filteredContacts} />
     </div>
   );
 }
